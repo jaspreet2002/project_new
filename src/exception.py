@@ -18,9 +18,8 @@ class CustomException(Exception):
         self.error_message = error_message_detail(error_message, error_detail=error_detail)
 
     def __str__(self):
-        return self.error_message    
+        return self.error_message  
     
-'''
 
 if __name__=="__main__":
     logging.info("Logging has started")
@@ -28,6 +27,5 @@ if __name__=="__main__":
     try:
         a=1/0
     except Exception as e:
-        logging.info('Dicision by zero') 
+        logging.info('Division by zero') 
         raise CustomException(e,sys)
-'''
